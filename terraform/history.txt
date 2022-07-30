@@ -1,0 +1,142 @@
+    1  git clone https://github.com/blachester/gcp-training.git
+    2  cd gcp-training/
+    3  git checkut -b develop
+    4  git checkout -b develop
+    5  git push
+    6  git push --set-upstream origin develop
+    7  git commit
+    8  git config --global user.email "blachester@gmail.com"
+    9  git config --global user.name "blachester"
+   10  git commit
+   11  git push
+   12  git push --set-upstream origin develop
+   13  mkdir terraform
+   14  cd terraform/
+   15  touch main.tf
+   16  git add .
+   17  git commit -m start"
+   18  git commit -m "start"
+   19  git push
+   20  git push --set-upstream origin develop
+   21  cd ../
+   22  cd 
+   23  ssh-keygen -t ed25519 -C "blachester@gmail.com"
+   24  $ eval "$(ssh-agent -s)"
+   25  $eval "$(ssh-agent -s)"
+   26  ssh-add ~/.ssh/id_ed25519
+   27  ls -la ~/.ssh
+   28  cat ~/.ssh/id_ed25519
+   29  cat ~/.ssh/id_ed25519.pub 
+   30  ssh -T git@github.com
+   31  ll
+   32  cd gcp-training/
+   33  ll
+   34  cd terraform/
+   35  ll
+   36  git status
+   37  git push
+   38  git push --set-upstream origin develop
+   39  ssh-add ~/.ssh/id_ed25519.pub 
+   40  ssh
+   41  git push --set-upstream origin develop
+   42  git remote -v
+   43  git remote set-url origin git@github.com:blachester/gcp-training.gitt
+   44  git remote set-url origin git@github.com:blachester/gcp-training.git
+   45  git push --set-upstream origin develop
+   46  touchvariables.tf
+   47  touch variables.tf
+   48  mkdir modules
+   49  mkdir storage
+   50  mkdir modules/instances
+   51  touch modules/instances/instances.tf
+   52  touch modules/instances/outputs.tf
+   53  touch modules/instances/variables.tf
+   54  mkdir modules/storage
+   55  rm -Rf storage/
+   56  touch modules/storage/storage.tf
+   57  touch modules/storage/outputs.tf
+   58  touch modules/storage/variables.tf
+   59  git status
+   60  git add .
+   61  git commit -m structure
+   62  git push
+   63  cd gcp-training/terraform/
+   64  ll
+   65  vim variables.tf 
+   66  terraform 
+   67  terraform fmt
+   68  terraform init
+   69  vim variables.tf 
+   70  terraform init
+   71  cp variables.tf modules/storage/
+   72  cp variables.tf modules/instances/
+   73  git status
+   74  git add .
+   75  git commit -m "add variable"
+   76  vim main.tf 
+   77  terraform init
+   78  git add .
+   79  git commit -m "task1 ok"
+   80  terraform import google_compute_instance.tf-instance-1 tf-instance-1
+   81  vim modules/instances/instances.tf 
+   82  terraform import google_compute_instance.tf-instance-1 tf-instance-1
+   83  terraform init
+   84  terraform import google_compute_instance.tf-instance-1 tf-instance-1
+   85  cat modules/instances/instances.tf 
+   86  vim main.tf 
+   87  terraform init
+   88  ll
+   89  vim main.tf 
+   90  terraform init
+   91  terraform import google_compute_instance.tf-instance-1 tf-instance-1
+   92  cat modules/instances/instances.tf 
+   93  terraform import google_compute_instance.tf-instance-1 tf-instance-1
+   94  terraform import module.google_compute_instance.tf-instance-1 tf-instance-1
+   95  terraform show
+   96  terraform 
+   97  terraform plan
+   98  terraform 
+   99  terraform refresh
+  100  vim modules/instances/instances.tf 
+  101  terraform refresh
+  102  modules/instances/instances.tf
+  103  vim modules/instances/instances.tf
+  104  ll
+  105  cat terraform.tfstate 
+  106  cat .terraform/providers/registry.terraform.io/hashicorp/google/4.30.0/linux_amd64/terraform-provider-google_v4.30.0_x5 
+  107  clear
+  108  gcloud instances describe --zone=us-east1-c tf-instance-1
+  109  gcloud compute instances describe --zone=us-east1-c tf-instance-1
+  110  vim modules/instances/instances.tf 
+  111  df -h
+  112  cd /root
+  113  cd
+  114  du - skh *
+  115  rm -Rf gopath/
+  116  sudo -s
+  117  ll
+  118  cd gcp-training/
+  119  ll
+  120  cd terraform/
+  121  ll
+  122  cd modules/
+  123  ll
+  124  cd instances/
+  125  ll
+  126  vim instances.tf 
+  127  cd ../../
+  128  terraform plan
+  129  history | grep import
+  130  terraform import module.google_compute_instance.tf-instance-1 tf-instance-1
+  131  terraform import module.google_compute_instance tf-instance-1
+  132  terraform import module.instances.google_compute_instance tf-instance-1
+  133  terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1
+  134  terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1 --zone=us-east1
+  135  terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1 --zone=us-east1-c
+  136  terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1
+  137  ll
+  138  vim main.tf 
+  139  terraform import module.instances.google_compute_instance.tf-instance-1 tf-instance-1
+  140  git status
+  141  ll
+  142  history > history.txt
